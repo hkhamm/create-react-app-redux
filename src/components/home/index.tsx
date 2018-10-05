@@ -14,7 +14,14 @@ import {
 
 const styles = (): any => ({
     button: {
-        border: 'solid 1px #000000'
+        border: 'solid 1px #000000',
+        marginRight: '8px'
+    },
+    buttons: {
+        paddingBottom: '16px'
+    },
+    input: {
+        marginRight: '8px'
     }
 })
 
@@ -68,26 +75,26 @@ class Home extends React.Component<TComponentProps, IComponentState> {
                 <h1>Home</h1>
                 <p>Count: {count}</p>
 
-                <p>
+                <div className={classes.buttons}>
                     <Button onClick={incrementDispatch} className={classes.button}>Increment</Button>
                     <Button onClick={incrementAsyncDispatch} className={classes.button} disabled={isIncrementing}>
                         Increment Async
                     </Button>
-                </p>
+                </div>
 
-                <p>
+                <div className={classes.buttons}>
                     <Button onClick={decrementDispatch} className={classes.button}>Decrement</Button>
                     <Button onClick={decrementAsyncDispatch} className={classes.button} disabled={isDecrementing}>
                         Decrement Async
                     </Button>
-                </p>
+                </div>
 
-                <p>
-                    <Input value={name} onChange={this.onChangeName} />
+                <div>
+                    <Input value={name} onChange={this.onChangeName} className={classes.input} />
                     <Button onClick={this.submitName} className={classes.button}>
                         Submit Name
                     </Button>
-                </p>
+                </div>
             </div>
         )
     }
