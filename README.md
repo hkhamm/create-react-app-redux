@@ -1,14 +1,14 @@
 # create-react-app-ts-redux
 
-## Installation
+## Setup
 
 ```bash
-git clone https://github.com/notrab/create-react-app-redux.git
+git clone https://github.com/hkhamm/create-react-app-ts-redux.git
 cd create-react-app-ts-redux
-yarn
+yarn install
 ```
 
-## Get started
+## Run
 
 ```bash
 yarn start
