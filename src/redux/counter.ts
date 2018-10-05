@@ -1,4 +1,4 @@
-import { Action, Dispatch } from "redux"
+import { Action, Dispatch } from 'redux'
 
 export const INCREMENT_REQUESTED = 'INCREMENT_REQUESTED'
 export const INCREMENT = 'INCREMENT'
