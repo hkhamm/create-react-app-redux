@@ -1,10 +1,10 @@
 import { Action, Dispatch } from "redux"
 
-export const INCREMENT_REQUESTED = 'counter/INCREMENT_REQUESTED'
-export const INCREMENT = 'counter/INCREMENT'
-export const DECREMENT_REQUESTED = 'counter/DECREMENT_REQUESTED'
-export const DECREMENT = 'counter/DECREMENT'
-export const SET_NAME = 'counter/SET_NAME'
+export const INCREMENT_REQUESTED = 'INCREMENT_REQUESTED'
+export const INCREMENT = 'INCREMENT'
+export const DECREMENT_REQUESTED = 'DECREMENT_REQUESTED'
+export const DECREMENT = 'DECREMENT'
+export const SET_NAME = 'SET_NAME'
 
 export interface ICounterState {
     count: number

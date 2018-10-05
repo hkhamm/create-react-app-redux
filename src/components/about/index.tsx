@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { RouteComponentProps } from 'react-router'
+import { IState } from '../../redux'
 
 const About = (props: TComponentProps) => (
     <div>
@@ -14,7 +15,7 @@ interface IStateToProps {
     name: string
 }
 
-const mapStateToProps = ({ counter }: any): IStateToProps => ({
+const mapStateToProps = ({ counter }: IState): IStateToProps => ({
     name: counter.name
 })
 

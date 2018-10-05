@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux'
-import counter from './actions-reducers'
+import counter, { ICounterState } from './counter'
+
+export interface IState {
+    counter: ICounterState
+}
 
 export default combineReducers({
-  counter
+    counter
 })

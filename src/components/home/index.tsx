@@ -4,13 +4,14 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import { RouteComponentProps } from 'react-router'
 import { bindActionCreators, Dispatch } from 'redux'
+import { IState } from '../../redux'
 import {
     decrement,
     decrementAsync,
     increment,
     incrementAsync,
     setName
-} from '../../redux/actions-reducers'
+} from '../../redux/counter'
 
 const styles = (): any => ({
     button: {
@@ -107,7 +108,7 @@ interface IStateToProps {
     name: string
 }
 
-const mapStateToProps = ({ counter }: any): IStateToProps => ({
+const mapStateToProps = ({ counter }: IState): IStateToProps => ({
     count: counter.count,
     isIncrementing: counter.isIncrementing,
     isDecrementing: counter.isDecrementing,
