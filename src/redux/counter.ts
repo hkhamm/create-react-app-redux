@@ -61,11 +61,11 @@ export default (state: ICounterState = initialState, action: IAction) => {
 export const increment = () => {
     return (dispatch: Dispatch) => {
         dispatch({
-        type: INCREMENT_REQUESTED
+            type: INCREMENT_REQUESTED
         })
 
         dispatch({
-        type: INCREMENT
+            type: INCREMENT
         })
     }
 }
